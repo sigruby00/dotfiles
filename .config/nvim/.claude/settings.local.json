@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/home/devruby/**)",
+      "Read(/home/devruby/**)",
+      "Bash(echo $SHELL)",
+      "Read(/home/devruby/**)",
+      "Read(/home/devruby/script/**)",
+      "Bash(find:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
