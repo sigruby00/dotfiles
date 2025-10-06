@@ -11,7 +11,7 @@ return {
     vim.opt.background = "dark"
 
     -- Gruvbox-material specific options
-    vim.g.gruvbox_material_background = "hard" -- "hard", "medium"(default), "soft"
+    vim.g.gruvbox_material_background = "medium" -- "hard", "medium"(default), "soft"
     vim.g.gruvbox_material_better_performance = 1
     vim.g.gruvbox_material_enable_italic = false
 

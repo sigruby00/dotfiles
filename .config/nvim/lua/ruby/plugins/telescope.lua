@@ -13,6 +13,7 @@ return {
     telescope.setup({
       defaults = {
         path_display = { "smart" },
+        winblend = 0, -- transparency of telescope window
         mappings = {
           i = {
             ["<C-k>"] = actions.move_selection_previous, -- move to prev result

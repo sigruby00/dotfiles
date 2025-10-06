@@ -1,0 +1,10 @@
+return {
+  "steve-lohmeyer/mars",
+  enabled = true,
+  priority = 1000,
+  config = function()
+    require("mars").setup({})
+
+    vim.cmd("colorscheme mars")
+  end,
+}
