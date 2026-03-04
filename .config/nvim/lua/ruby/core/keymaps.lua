@@ -16,6 +16,12 @@ keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) 
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
+-- resize splits with Ctrl+[ and Ctrl+]
+keymap.set("n", "<M-Left>", "<cmd>vertical resize -5<CR>", { desc = "Decrease split width" })
+keymap.set("n", "<M-Right>", "<cmd>vertical resize +5<CR>", { desc = "Increase split width" })
+keymap.set("n", "<M-Up>", "<cmd>resize +5<CR>", { desc = "Increase split height" })
+keymap.set("n", "<M-Down>", "<cmd>resize -5<CR>", { desc = "Decrease split height" })
+
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab

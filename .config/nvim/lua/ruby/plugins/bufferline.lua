@@ -6,8 +6,13 @@ return {
   event = "VimEnter", -- ✅ 시작 시 자동 표시되도록
   opts = {
     options = {
+      number = "ordinal",
       separator_style = "slant",
       diagnostics = "nvim_lsp",
+      always_show_bufferline = true,
+      show_buffer_icons = false,
+      show_buffer_close_icons = false,
+      show_close_icon = false,
       offsets = {
         {
           filetype = "NvimTree",

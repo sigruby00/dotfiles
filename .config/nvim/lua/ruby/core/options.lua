@@ -1,5 +1,4 @@
 vim.cmd("let g:netrw_liststyle = 3")
-
 local opt = vim.opt
 
 opt.relativenumber = false
@@ -10,15 +9,17 @@ opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
 opt.shiftwidth = 2 -- 2 spaces for indent width
 opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
+vim.bo.softtabstop = 2
 
 -- line wrapping
-opt.wrap = true
+opt.wrap = false
 vim.opt.linebreak = true
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
 
+opt.guicursor = ""
 opt.cursorline = true
 
 -- turn on termguicolors for tokyonight colorscheme to work
@@ -39,3 +40,9 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+vim.diagnostic.config({
+  underline = {
+    severity = vim.diagnostic.severity.ERROR,
+  },
+})

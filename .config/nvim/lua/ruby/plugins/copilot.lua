@@ -4,6 +4,9 @@ return {
   cmd = "Copilot",
   build = ":Copilot auth",
   event = "BufReadPost",
+  requires = {
+    "copilotlsp-nvim/copilot-lsp",
+  },
   opts = {
     suggestion = {
       enabled = not vim.g.ai_cmp,
